@@ -7,7 +7,7 @@
 </head>
 <?php if( isset($_POST['button']) ) {
 	if( $_POST['lat'] != 0 && $_POST['lon'] != 0)
-		file_put_contents("positions.txt", date("d/m/o H:i", time()+7200).",".$_POST['lat'].",".$_POST['lon']."\n", FILE_APPEND); ?>
+		file_put_contents("positions.txt", date("d/m/o H:i", time()).",".$_POST['lat'].",".$_POST['lon']."\n", FILE_APPEND); ?>
 <body>
 	<p>Position added.</p>
 </body>
